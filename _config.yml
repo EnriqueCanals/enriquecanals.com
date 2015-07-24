@@ -1,0 +1,8 @@
+title: Enrique Canals
+email: enriquecanals@gmail.com
+caption: Software Developer
+permalink: /blog/:year/:month/:day/:title
+markdown: kramdown
+lsi: false
+production: true
+exclude: [sass, CNAME, vendor, Procfile, Rakefile, README.md, config.ru, Gemfile, Gemfile.lock]

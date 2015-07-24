@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="main">
+
+	   <div id="content">
+
+      {% include header.html %}
+
+      <section id="content_body">
+        <header id="page_header">
+          {% if site.title == page.page %}
+          <h1></h1>
+          {% else %}
+          <h1>{{ page.page }}</h1>
+          {% if page.type == "blog" %}
+          <h2>{{ page.title }}</h2>
+          {% endif %}
+          <hr> {% endif %}
+        </header>
+        {{ content }}
+      </section>
+
+      {% include footer.html %}
+
+    </div>
+
+    <script type="text/javascript">
+      var disqus_shortname = 'enriquecanals';
+      (function() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  </body>
+
+</html>

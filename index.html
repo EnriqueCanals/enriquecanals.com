@@ -1,0 +1,17 @@
+---
+layout: default
+title: Enrique Canals - Software Developer
+page: Archive
+---
+<div class="posts">
+	{% for post in site.posts %}
+	<div class="post">
+		<h3>
+			<span class="post_date">{{ post.date | date: "%B %Y" }}</span>
+		</h3>
+		<div class="post_title">
+			<a href="{{ post.url }}">{{ post.title }}</a>
+		</div>
+	</div>
+	{% endfor %}
+</div>
