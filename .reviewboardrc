@@ -1,0 +1,4 @@
+REVIEWBOARD_URL = "reviews.onward.org"
+REPOSITORY = "Test Repo"
+BRANCH = "master"
+LAND_DEST_BRANCH = "test-branch"
